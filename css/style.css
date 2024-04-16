@@ -14,7 +14,24 @@ html {
 }
 
 body {
+background-color: black;
+padding: 0.2rem;
+}
 
+button{
+    width: 24.25%;
+    font-size: 5rem;
+    height: 8rem;
+    color: black;
+}
+
+#add, #sub, #div, #mul, #vlear, #enter, #comma{
+    color: violet;
+}
+
+#clear{
+    width: 99%;
+    color: violet;
 }
 
 main {
@@ -22,25 +39,23 @@ main {
 }
 
 main input{
-    width: 100%;
-    font-size: 3.5rem;
+    width: 99%;
+    font-size: 5rem;
     margin-bottom:10px;
     background-color: black;
     color: green;
     text-align: right;
     padding: 10px 4px 10px 4px;
     font-family: lcd;
-    border: 1px solid yellow;
-    border-radius:4px;
+    border: 1px solid violet;
 }
 
 main section#keyBoard {
-    /** Grid eller liknade */
 }
 
-@media (max-width: 767px) {
+@media (min-width: 767px) {
     body {
-
+        width: 40rem;
     }
 
     main {
