@@ -20,13 +20,27 @@ function init() {
  */
 function buttonClick(e) {
     let btn = e.target.id; //id för den tangent som tryckte ner
-
+    console.log(btn);
 
     // kollar om siffertangent är nedtryckt
     if (btn.substring(0, 1) === 'b') {
         let digit = btn.substring(1, 2); // plockar ut siffran från id:et
+        addDigit(digit);
 
-    } else { // Inte en siffertangent, övriga tangenter.
+    } else if (btn === 'add')  {             // Inte en siffertangent, övriga tangenter.
+        setOperator ('+');
+    }
+    else if(btn === 'mul') {
+        setOperator ('*');
+    }
+    else if (btn === 'sub'){
+        setOperator ('-');
+    }
+    else if (btn === 'div') {
+        setOperator ('/');
+    }
+    else if (btn === 'enter'){
+        calculate();
 
     }
 }
@@ -35,6 +49,7 @@ function buttonClick(e) {
  *  Lägger till siffra på display.
  */
 function addDigit(digit) {
+    lcd.value =  lcd.value + digit;
 }
 
 /**
@@ -49,14 +64,24 @@ function addComma() {
  * +, -, *, /
  */
 function setOperator(operator){
-
+    arithmetic = operator;
+    memory = parseFloat(lcd.value);
+    clearLCD();
 }
 
 /**
  * Beräknar och visar resultatet på displayen.
  */
 function calculate() {
-
+if (arithmetic === '+') {
+    lcd.value = (+memory + +lcd.value);
+} else if (arithmetic === '-') {
+    lcd.value = (+memory - +lcd.value);
+} else if (arithmetic === '*') {
+    lcd.value = (+memory * +lcd.value);
+} else if (arithmetic === '/') {
+    lcd.value = (+memory / +lcd.value);
+}
 }
 
 /** Rensar display */
