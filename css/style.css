@@ -26,16 +26,19 @@ button{
 }
 
 #add, #sub, #div, #mul, #vlear, #enter, #comma{
-    color: violet;
+    color: #0F0;
 }
 
 #clear{
     width: 99%;
-    color: violet;
+    color: #0F0;
 }
 
-main {
-
+/* Utseendet på texten i min logg */
+main #calcLog {
+    font-size: 20px;
+    color: #0F0;
+    padding: 10px;
 }
 
 main input{
@@ -43,33 +46,15 @@ main input{
     font-size: 5rem;
     margin-bottom:10px;
     background-color: black;
-    color: violet;
+    color: #0F0;
     text-align: right;
     padding: 10px 4px 10px 4px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 1px solid violet;
-}
-
-main section#keyBoard {
+    border: 1px solid #0F0;
 }
 
 @media (min-width: 767px) {
     body {
         width: 40rem;
     }
-
-    main {
-
-    }
-
-    main input{
-
-    }
-}
-
-@media (max-width: 339px) {
-    main {
-
-    }
-
 }
