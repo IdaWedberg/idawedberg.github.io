@@ -73,11 +73,11 @@ function addComma() {
  * +, -, *, /
  */
 function setOperator(operator) {
-    arithmetic = operator;
-    addToLog(parseFloat(lcd.value), arithmetic); // lägger till första värdet + räknesätt som historik under räknaren.
+    addToLog(parseFloat(lcd.value), operator); // lägger till första värdet + räknesätt som historik under räknaren.
     if (memory != 0) {    // om någt är lagrat i minnet gör beräkningen innan nya värdet sparas (för att hantera 1+1+1)
         calculate();
     }
+    arithmetic = operator;
     memory = parseFloat(lcd.value);
     clearLCD();
 }
