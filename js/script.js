@@ -70,7 +70,7 @@ function addComma() {
 
 /**
  * Sparar operator.
- * +, -, *, /
+ * +, -, *, / gd
  */
 function setOperator(operator) {
     addToLog(parseFloat(lcd.value), operator); // lägger till första värdet + räknesätt som historik under räknaren.
