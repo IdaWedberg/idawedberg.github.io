@@ -22,7 +22,6 @@ body {
 
 button{
     font-size: 5rem;
-    height: 8rem;
     color: black;
 }
 
@@ -31,7 +30,7 @@ button{
 }
 
 #clear{
-    width: 80%;
+    width: 100%;
     color: #0F0;
 }
 
@@ -44,7 +43,8 @@ main #calcLog {
 
 main input{
     width: 99%;
-    font-size: 5rem;
+    height: 7rem;
+    font-size: 3rem;
     margin-bottom:10px;
     background-color: black;
     color: #0F0;
