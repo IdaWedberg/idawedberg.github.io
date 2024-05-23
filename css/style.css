@@ -27,7 +27,7 @@ button{
     color: #0F0;
 }
 
-#clear{
+#clear{ 
     width: 100%;
     color: #0F0;
 }
@@ -40,7 +40,7 @@ main #calcLog {
 }
 
 main input{
-    width: 99%;
+    width: calc(100% - 18%);
     height: 7rem;
     font-size: 3rem;
     margin-bottom:10px;
@@ -50,6 +50,7 @@ main input{
     padding: 10px 4px 10px 4px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 1px solid #0F0;
+
 }
 
 #keyBoard {
