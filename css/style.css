@@ -14,11 +14,14 @@ html {
 }
 
 body {
+line-height: 1.5;
+-webkit-font-smoothing: antialiased;
 background-color: black;
 padding: 0.2rem;
 }
 
 button{
+    font: inherit;
     width: 20%;
     font-size: 5rem;
     height: 8rem;
