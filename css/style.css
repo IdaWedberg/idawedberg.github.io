@@ -5,8 +5,8 @@
 }
 
 @font-face {
-  font-family: lcd;
-  src: url(../font/SUBWT___.ttf);
+    font-family: lcd;
+    src: url(../font/SUBWT___.ttf);
 }
 
 html {
@@ -20,16 +20,22 @@ body {
     overflow-x: hidden;
 }
 
-button{
+button {
     font-size: 5rem;
     color: black;
 }
 
-#add, #sub, #div, #mul, #vlear, #enter, #comma{
+#add,
+#sub,
+#div,
+#mul,
+#vlear,
+#enter,
+#comma {
     color: #0F0;
 }
 
-#clear{ 
+#clear {
     width: 100%;
     color: #0F0;
 }
@@ -41,12 +47,12 @@ main #calcLog {
     padding: 10px;
 }
 
-main input{
+main input {
     width: calc(100% - 8%);
     width: 100%;
     height: 7rem;
     font-size: 3rem;
-    margin-bottom:10px;
+    margin-bottom: 10px;
     background-color: black;
     color: #0F0;
     text-align: right;
@@ -63,6 +69,7 @@ main input{
     grid-row: 1 / 1;
     grid-column: 1 / 1;
     width: 100%;
+    /*din mamm*/
 
 }
 

@@ -121,7 +121,7 @@ function memClear(keepLcd) {
 }
 
 /** Funktion för vad som ska loggas i historiken. */
-function addToLog(first, second) {      
+function addToLog(first, second) {
     const log = document.getElementById("calcLog");
     log.append(first);
     log.append(second);
@@ -138,7 +138,7 @@ function addLog() {
     logDiv.id = "calcLog";
 
     // lägg in logg efter keyboard
-    const lcd = document.getElementById("keyBoard"); 
+    const lcd = document.getElementById("keyBoard");
     lcd.append(logDiv);
 }
 
